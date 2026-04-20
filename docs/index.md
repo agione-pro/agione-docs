@@ -16,15 +16,21 @@ hero:
 
 features:
   - title: Pre-Sales
-    details: Product whitepapers, feature lists, compatibility matrix, and best practices
+    details: Product whitepapers, feature lists, compatibility matrix, best practices
+    link: /presales/
   - title: Solution Design
     details: Architecture, capacity planning, and security design documentation
+    link: /solution/
   - title: Deployment
     details: Installation, configuration, model deployment, and tuning guides
+    link: /deployment/
   - title: Operations
     details: API guide, SDK examples, user manual, monitoring, and maintenance
+    link: /operations/
   - title: Troubleshooting
     details: FAQ, fault diagnosis, and support SOP
+    link: /troubleshooting/
   - title: OEM
     details: OEM configuration for third-party deployments
+    link: /oem/
 ---
