@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # 新增手动触发
+    inputs: # 可选：定义手动输入参数
+      environment:
+        description: 'Deploy Environment'
+        required: false
+        default: 'manual or remote trigger'
 
 jobs:
   deploy:
