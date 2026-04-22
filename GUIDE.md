@@ -30,6 +30,8 @@
 │   ├── public/                    # 静态资源（favicon、logo 等，直接复制到构建输出）
 │   ├── index.md                   # 英文首页
 │   ├── presales/                  # 英文售前文档
+│   │   ├── best-practices/        # 最佳实践子目录
+│   │   └── survey/                # 调研子目录
 │   ├── solution/                  # 英文方案设计文档
 │   ├── deployment/                # 英文交付部署文档
 │   ├── operations/                # 英文运维运营文档
@@ -38,6 +40,8 @@
 │   └── zh/                        # 中文文档目录
 │       ├── index.md               # 中文首页
 │       ├── presales/              # 中文售前文档
+│       │   ├── best-practices/    # 最佳实践子目录
+│       │   └── survey/            # 调研子目录
 │       ├── solution/              # 中文方案设计文档
 │       ├── deployment/            # 中文交付部署文档
 │       ├── operations/            # 中文运维运营文档
@@ -271,6 +275,7 @@ CI/CD 构建时会自动将模板复制为生成文件：
 ```typescript
 export const enNavbar = [
   { text: 'Home', link: '/' },
+  { text: 'Product Overview', link: '/presales/' },
   {
     text: 'Documentation',
     items: [
@@ -279,6 +284,7 @@ export const enNavbar = [
     ],
   },
   { text: 'AGIOne', link: 'https://agione.pro/' },  // CN 版为 https://agione.cc/
+  { text: 'OneProCloud', link: 'https://oneprocloud.com/' },
 ]
 ```
 
@@ -309,6 +315,7 @@ search: {
           modal: {
             noResultsText: '无法找到相关结果',
             resetButtonTitle: '清除查询',
+            backButtonTitle: '关闭搜索',
             footer: {
               selectText: '选择',
               navigateText: '切换',
@@ -350,7 +357,8 @@ export const socialLinks = [
 
 项目使用 GitHub Actions 实现自动化构建部署，配置文件位于 `.github/workflows/main.yml`。
 
-`main` 分支推送代码时，会触发 **两个并行 job** 构建两套静态资源：
+`main` 分支推送代码时，会触发 **两个并行 job** 构建两套静态资源。
+也支持在 GitHub Actions 页面手动触发（`workflow_dispatch`）。
 
 | Job | 使用模板 | 部署路径 | 访问域名 |
 |-----|---------|---------|---------|
@@ -367,9 +375,14 @@ export const socialLinks = [
 6. **Rsync** - 同步到目标服务器
 7. **Refresh CDN** - 刷新 CDN 缓存
 
-### 环境变量
+### 触发方式
 
-以下变量需在 GitHub 仓库 Settings → Variables 中配置：
+| 触发方式 | 说明 |
+|----------|------|
+| 推送到 `main` 分支 | 自动触发 CN + Global 双构建 |
+| 手动触发（Actions 页面） | 可选择 `workflow_dispatch` 手动运行 |
+
+### 环境变量
 
 | 变量 | 用途 |
 |------|------|

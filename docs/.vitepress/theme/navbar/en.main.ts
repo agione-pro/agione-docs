@@ -11,7 +11,7 @@ export const enNavbar = [
       { text: 'OEM', link: '/oem/' },
     ]
   },
-  { text: 'AGIOne', link: 'https://zh.agione.co/' },
+  { text: 'AGIOne', link: 'https://agione.cc/' },
   // { text: 'Get Support', link: 'https://support.oneprocloud.com/' },
   // { text: 'FAQ', link: 'https://qa.oneprocloud.com/' },
   { text: 'OneProCloud', link: 'https://oneprocloud.com/' },

@@ -70,8 +70,12 @@ npm run docs:preview
 │   │   │   ├── en.ts           # 英文主题配置
 │   │   │   ├── zh.ts           # 中文主题配置
 │   │   │   ├── navbar/
-│   │   │   │   ├── en.ts       # 英文导航栏配置
-│   │   │   │   └── zh.ts       # 中文导航栏配置
+│   │   │   │   ├── en.ts                # 英文导航栏（构建时由模板生成，勿手动修改）
+│   │   │   │   ├── zh.ts                # 中文导航栏（构建时由模板生成，勿手动修改）
+│   │   │   │   ├── en.main.ts           # CN 版英文导航模板（docs.agione.cc）
+│   │   │   │   ├── zh.main.ts           # CN 版中文导航模板（docs.agione.cc）
+│   │   │   │   ├── en.global.main.ts    # Global 版英文导航模板（docs.agione.pro）
+│   │   │   │   └── zh.global.main.ts    # Global 版中文导航模板（docs.agione.pro）
 │   │   │   └── sidebar/
 │   │   │       ├── en.ts       # 英文侧边栏配置
 │   │   │       └── zh.ts       # 中文侧边栏配置
@@ -81,6 +85,8 @@ npm run docs:preview
 │   ├── public/                 # 静态资源（favicon, logo 等）
 │   ├── index.md                # English homepage
 │   ├── presales/               # English pre-sales docs
+│   │   ├── best-practices/     # 最佳实践子目录
+│   │   └── survey/             # 调研子目录
 │   ├── solution/               # English solution docs
 │   ├── deployment/             # English deployment docs
 │   ├── operations/             # English operations docs
@@ -89,26 +95,36 @@ npm run docs:preview
 │   └── zh/                     # Chinese locale
 │       ├── index.md            # 中文首页
 │       ├── presales/           # 中文售前资料
+│       │   ├── best-practices/ # 最佳实践子目录
+│       │   └── survey/         # 调研子目录
 │       ├── solution/           # 中文方案设计
 │       ├── deployment/         # 中文交付部署
 │       ├── operations/         # 中文运维运营
 │       ├── troubleshooting/    # 中文排错支持
 │       └── oem/                # 中文 OEM 配置
+├── .github/workflows/
+│   ├── main.yml                # 主分支 CI/CD（CN + Global 双构建）
+│   └── preview.yml             # 预览分支 CI/CD
 ├── .gitignore
+├── GUIDE.md                    # 项目完整指南（目录结构、配置说明、CI/CD）
 ├── package.json
 └── package-lock.json
 ```
 
 ## 配置说明
 
-本项目采用模块化配置结构：
+本项目采用模块化配置结构，导航栏使用模板 + 生成方式管理：
 
 | 配置文件 | 说明 |
 |----------|------|
 | `config/index.ts` | 主配置入口，合并所有配置 |
 | `config/shared.ts` | 共享基础配置（title, description） |
-| `theme/navbar/en.ts` | 英文导航栏配置 |
-| `theme/navbar/zh.ts` | 中文导航栏配置 |
+| `theme/navbar/en.main.ts` | CN 版英文导航模板（手动编辑） |
+| `theme/navbar/zh.main.ts` | CN 版中文导航模板（手动编辑） |
+| `theme/navbar/en.global.main.ts` | Global 版英文导航模板（手动编辑） |
+| `theme/navbar/zh.global.main.ts` | Global 版中文导航模板（手动编辑） |
+| `theme/navbar/en.ts` | 英文导航栏（构建时自动生成，勿手动修改） |
+| `theme/navbar/zh.ts` | 中文导航栏（构建时自动生成，勿手动修改） |
 | `theme/sidebar/en.ts` | 英文侧边栏配置 |
 | `theme/sidebar/zh.ts` | 中文侧边栏配置 |
 | `social.ts` | 社交链接配置 |
@@ -122,10 +138,12 @@ npm run docs:preview
 | `docs/presales/new-doc.md` | `/presales/new-doc` |
 | `docs/zh/presales/new-doc.md` | `/zh/presales/new-doc` |
 
-添加文档后，需要同步更新导航栏和侧边栏配置：
+添加文档后，需要同步更新配置：
 
-- **导航栏配置**：`docs/.vitepress/theme/navbar/en.ts`（英文）和 `zh.ts`（中文）
 - **侧边栏配置**：`docs/.vitepress/theme/sidebar/en.ts`（英文）和 `zh.ts`（中文）
+- **导航栏配置**：编辑对应的导航栏模板文件（`*.main.ts` / `*.global.main.ts`），CI/CD 构建时会自动生成 `en.ts` / `zh.ts`
+
+详细说明请参考 [GUIDE.md](./GUIDE.md)。
 
 ## License
 

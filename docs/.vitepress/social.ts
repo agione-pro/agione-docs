@@ -1,3 +1,3 @@
 export const socialLinks = [
-  { icon: 'github', link: 'https://github.com/agione-pro/agione-docs' }
+  { icon: 'github', link: 'https://github.com/agione-pro/docs' }
 ]
