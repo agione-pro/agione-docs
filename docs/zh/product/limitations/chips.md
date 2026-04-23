@@ -1,15 +1,43 @@
 # 纳管芯片
 
-## 支持范围（示例）
+## AGIOne纳管芯片兼容性列表
 
-本页用于说明 AGIOne 对不同芯片平台的纳管支持情况，便于前期选型与部署评估。
+以下芯片列表已经过 AGIOne 官方团队验证测试。在使用其他未列出的芯片时，可能存在兼容性问题或功能限制，AGIOne 对此类情况不予任何明示或暗示的保证。若使用非列表芯片，建议在部署前请与我们联系。
 
-| 芯片平台 | 支持状态 | 说明 |
-|------|------|------|
-| NVIDIA A100/H100 | 完全支持 | 适合生产高并发场景 |
-| NVIDIA A800 | 完全支持 | 常见私有化部署型号 |
-| NVIDIA T4/L4 | 条件支持 | 适合轻量场景与 PoC |
-| 国产 AI 芯片（部分） | 评估支持 | 需结合驱动与框架验证 |
+| 厂商 | 架构/系列 | 型号 |
+| --- | --- | --- |
+| nvidia | Hopper | H800 |
+| nvidia | Hopper | H200 |
+| nvidia | Hopper | H100 |
+| nvidia | Hopper | H20 |
+| nvidia | Ampere | A100 |
+| nvidia | Ampere | A800 |
+| nvidia | Ampere | A40 |
+| nvidia | Ampere | A30 |
+| nvidia | Ampere | A10 |
+| nvidia | Ampere | RTX A6000 |
+| nvidia | Ampere | RTX A5000 |
+| nvidia | Ampere | RTX A4000 |
+| nvidia | Ampere | RTX A2000 |
+| nvidia | Ampere | RTX 3090 |
+| nvidia | Ampere | RTX 3060 |
+| nvidia | Ada | L40 |
+| nvidia | Ada | L40S |
+| nvidia | Ada | L20 |
+| nvidia | Ada | L20S |
+| nvidia | Ada | L4 |
+| nvidia | Ada | L2 |
+| nvidia | Ada | RTX 6000 |
+| nvidia | Ada | RTX 5000 |
+| nvidia | Ada | RTX 4500 |
+| nvidia | Ada | RTX 4000 |
+| nvidia | Ada | RTX 2000 |
+| nvidia | Ada | RTX 4090 |
+| nvidia | Ada | RTX 4090D |
+| ascend910 | Ascend 910 | Ascend 910B |
+| ascend910 | Ascend 910 | Ascend 910C |
+| enflame | Enflame | 106 |
+| biren | Biren | S60 |
 
 ## 依赖要求（示例）
 

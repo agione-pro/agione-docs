@@ -1,15 +1,43 @@
 # Managed Chips
 
-## Supported Chips for Governance (Example)
+## Compatibility List
 
-This page describes AGIOne support for chip platforms under governance/management, to help with early-stage sizing and environment assessment.
+The following chip list has been verified and tested by the AGIOne official team. There may be compatibility issues or functional limitations when using other chips not listed, and AGIOne makes no express or implied warranty in such cases. If using non-listed chips, it is recommended to contact us before deployment.
 
-| Chip Platform | Support Status | Notes |
-|------|------|------|
-| NVIDIA A100/H100 | Fully supported | Recommended for production high-concurrency workloads |
-| NVIDIA A800 | Fully supported | Common for on‑prem deployments |
-| NVIDIA T4/L4 | Conditionally supported | Suitable for light workloads and PoC |
-| Domestic AI accelerators (selected models) | Under evaluation | Requires driver/framework version validation |
+| Vendor | Architecture/Series | Model |
+| --- | --- | --- |
+| NVIDIA | Hopper | H800 |
+| NVIDIA | Hopper | H200 |
+| NVIDIA | Hopper | H100 |
+| NVIDIA | Hopper | H20 |
+| NVIDIA | Ampere | A100 |
+| NVIDIA | Ampere | A800 |
+| NVIDIA | Ampere | A40 |
+| NVIDIA | Ampere | A30 |
+| NVIDIA | Ampere | A10 |
+| NVIDIA | Ampere | RTX A6000 |
+| NVIDIA | Ampere | RTX A5000 |
+| NVIDIA | Ampere | RTX A4000 |
+| NVIDIA | Ampere | RTX A2000 |
+| NVIDIA | Ampere | RTX 3090 |
+| NVIDIA | Ampere | RTX 3060 |
+| NVIDIA | Ada | L40 |
+| NVIDIA | Ada | L40S |
+| NVIDIA | Ada | L20 |
+| NVIDIA | Ada | L20S |
+| NVIDIA | Ada | L4 |
+| NVIDIA | Ada | L2 |
+| NVIDIA | Ada | RTX 6000 |
+| NVIDIA | Ada | RTX 5000 |
+| NVIDIA | Ada | RTX 4500 |
+| NVIDIA | Ada | RTX 4000 |
+| NVIDIA | Ada | RTX 2000 |
+| NVIDIA | Ada | RTX 4090 |
+| NVIDIA | Ada | RTX 4090D |
+| Huawei Ascend | Ascend 910 | Ascend 910B |
+| Huawei Ascend | Ascend 910 | Ascend 910C |
+| Enflame | Enflame | 106 |
+| Biren | Biren | S60 |
 
 ## Version and Dependency Requirements (Example)
 
