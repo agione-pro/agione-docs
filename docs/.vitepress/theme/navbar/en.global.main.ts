@@ -36,5 +36,4 @@ export const enNavbar = [
   // { text: 'Get Support', link: 'https://support.oneprocloud.com/' },
   // { text: 'FAQ', link: 'https://qa.oneprocloud.com/' },
   { text: 'OneProCloud', link: 'https://oneprocloud.com/' },
-  // { text: 'Calculator', link: 'https://calculator.oneprocloud.com/' },
 ]

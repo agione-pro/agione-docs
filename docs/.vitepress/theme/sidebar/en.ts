@@ -67,16 +67,16 @@ export const enSidebar: DefaultTheme.Sidebar = {
           link: "/installation/agione-deployment-requirements"
         },
         {
-          text: "(PowerOne)Deployment Configuration Requirements",
-          link: "/installation/calculator-deplyment-requirments"
+          text: "Deployment Configuration Requirements for Managing Compute Nodes",
+          link: "/installation/deployment-requirements-for-managing-compute-nodes"
         },
         {
           text: "(AGIOne)Quick Installation Guide",
           link: "/installation/agione-quick-install"
         },
         {
-          text: "(PowerOne)Quick Installation Guide",
-          link: "/installation/calculator-quick-install"
+          text: "Quick Installation Guide for Managing Compute Nodes",
+          link: "/installation/quick-install-for-managing-compute-nodes"
         },
       ],
     }

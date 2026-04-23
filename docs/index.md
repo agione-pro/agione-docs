@@ -19,7 +19,7 @@ features:
     details: Product positioning, capabilities, technical highlights, compatibility and limitations
     link: /product/
   - title: Installation
-    details: Deployment requirements and quick installation guides for AGIOne and PowerOne
+    details: Deployment requirements and quick installation guides for AGIOne and  for managing compute nodes
     link: /installation/
   - title: Purchase & Activation
     details: Online payment activation and activation-code based activation

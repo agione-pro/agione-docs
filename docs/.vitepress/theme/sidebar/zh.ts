@@ -36,9 +36,9 @@ export const zhSidebar: DefaultTheme.Sidebar = {
       collapsed: false,
       items: [
         { text: '（AGIOne）部署配置要求', link: '/zh/installation/agione-deployment-requirements' },
-        { text: '（算魔方）部署配置要求', link: '/zh/installation/calculator-deployment-requirements' },
+        { text: '纳管节点部署配置要求', link: '/zh/installation/deployment-requirements-for-managing-compute-nodes' },
         { text: '（AGIOne）快速安装指南', link: '/zh/installation/agione-quick-install' },
-        { text: '（算魔方）快速安装指南', link: '/zh/installation/calculator-quick-install' },
+        { text: '纳管节点快速安装指南', link: '/zh/installation/quick-install-for-managing-compute-nodes' },
       ],
     },
   ],

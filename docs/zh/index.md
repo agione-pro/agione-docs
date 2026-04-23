@@ -19,7 +19,7 @@ features:
     details: 产品定位、功能能力、技术亮点、兼容性与限制说明
     link: /zh/product/
   - title: 交付部署
-    details: 部署配置要求与快速安装指南（AGIOne / 算魔方）
+    details: 部署配置要求与快速安装指南（AGIOne平台 / 纳管算力节点）
     link: /zh/installation/
   - title: 购买与激活
     details: 在线支付激活与激活码激活流程
