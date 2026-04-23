@@ -9,28 +9,34 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /presales/
+      link: /product/
     - theme: alt
-      text: Deployment Guide
-      link: /deployment/
+      text: Installation
+      link: /installation/
 
 features:
-  - title: Pre-Sales
-    details: Product whitepapers, feature lists, compatibility matrix, best practices
-    link: /presales/
-  - title: Solution Design
-    details: Architecture, capacity planning, and security design documentation
-    link: /solution/
-  - title: Deployment
-    details: Installation, configuration, model deployment, and tuning guides
-    link: /deployment/
+  - title: Product Overview
+    details: Product positioning, capabilities, technical highlights, compatibility and limitations
+    link: /product/
+  - title: Installation
+    details: Deployment requirements and quick installation guides for AGIOne and PowerOne
+    link: /installation/
+  - title: Purchase & Activation
+    details: Online payment activation and activation-code based activation
+    link: /license/
+  - title: User Guide
+    details: Compute integration, compute management, and model deployment workflows
+    link: /userguide/
+  - title: User Manual
+    details: Register, login, and dashboard usage
+    link: /usermanual/
+  - title: Best Practices
+    details: Technical integration practices and project delivery cases
+    link: /practices/technical/
   - title: Operations
-    details: API guide, SDK examples, user manual, monitoring, and maintenance
-    link: /operations/
-  - title: Troubleshooting
-    details: FAQ, fault diagnosis, and support SOP
-    link: /troubleshooting/
-  - title: OEM
-    details: OEM configuration for third-party deployments
-    link: /oem/
+    details: Admin portal manual and O&M guide
+    link: /operations/admin-portal-manual/
+  - title: Others
+    details: FAQ and release notes
+    link: /others/faq/
 ---

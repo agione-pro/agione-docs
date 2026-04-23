@@ -9,28 +9,34 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /zh/presales/
+      link: /zh/product/
     - theme: alt
       text: 部署指南
       link: /zh/deployment/
 
 features:
-  - title: 售前资料
-    details: 产品白皮书、功能清单、兼容性矩阵、最佳实践
-    link: /zh/presales/
-  - title: 方案设计
-    details: 架构设计、容量规划、安全方案
-    link: /zh/solution/
+  - title: 产品概述
+    details: 产品定位、功能能力、技术亮点、兼容性与限制说明
+    link: /zh/product/
   - title: 交付部署
-    details: 安装部署、产品配置、模型调优、验收测试
+    details: 部署配置要求与快速安装指南（AGIOne / 算魔方）
     link: /zh/deployment/
-  - title: 运维运营
-    details: API 指南、SDK 示例、产品手册、监控、License 管理
-    link: /zh/operations/
-  - title: 排错支持
-    details: FAQ、故障排查、支持流程 SOP
-    link: /zh/troubleshooting/
-  - title: OEM 配置
-    details: 第三方部署 OEM 配置手册
-    link: /zh/oem/
+  - title: 购买与激活
+    details: 在线支付激活与激活码激活流程
+    link: /zh/license/
+  - title: 用户指南
+    details: 算力接入、算力管理与模型部署流程
+    link: /zh/userguide/
+  - title: 用户手册
+    details: 注册、登录与仪表盘使用指引
+    link: /zh/usermanual/
+  - title: 最佳实践
+    details: 技术集成实践与项目交付案例
+    link: /zh/practices/technical/
+  - title: 运维
+    details: 管理门户手册与运维指南
+    link: /zh/operations/admin-portal-manual/
+  - title: 其他
+    details: 常见问题与版本说明
+    link: /zh/others/faq/
 ---
