@@ -30,7 +30,7 @@ Provides core metric monitoring dashboards for model call volume, deployed insta
 |---------|---------|---------|
 | Government and Enterprise Customers | Data localization, private deployment, compliance audit | Government knowledge base intelligent Q&A, automatic document processing |
 | Financial Customers | High availability, quota control, traceable operations | Intelligent customer service, risk assessment assistance, contract review |
-| Manufacturing Customers | Production line integration, heterogeneous computing power scheduling, knowledge沉淀 | Industrial quality inspection, predictive equipment maintenance, process knowledge base |
+| Manufacturing Customers | Production line integration, heterogeneous computing power scheduling, knowledge precipitation | Industrial quality inspection, predictive equipment maintenance, process knowledge base |
 | Internet Enterprises | Elastic scaling, multi-model routing, cost control | Rapid AI application construction, model A/B testing |
 
 **Typical Scenario Examples:**

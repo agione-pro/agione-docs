@@ -8,7 +8,7 @@ AGIOne is a **one-stop intelligent computing power and model management platform
 
 <p align="center"><i>Figure 1: AGIOne Six Core Capabilities Overview (including end-to-end call observability)</i></p>
 
-> The seventh capability, **Call Observability**, runs horizontally across the first six capabilities, providing full链路 visualization and analysis from hardware resources to business calls.
+> The seventh capability, **Call Observability**, runs horizontally across the first six capabilities, providing full-chain visualization and analysis from hardware resources to business calls.
 
 ---
 
@@ -59,11 +59,11 @@ Collected in real-time via DCGM (NVIDIA) / npu-exporter (Ascend), pushed to moni
 - **NVLink / InfiniBand Bandwidth** & health status
 
 
-## 2. Model Templates —沉淀最佳实践
+## 2. Model Templates — Pre-built Best Practices
 
 ### 2.1 Capability Overview
 
-Based on **vast historical deployment experience**, AGIOne沉淀 each mainstream LLM's deployment knowledge into **reusable model templates**, transforming work that **relies on expert experience** (how many cards, which engine, which parameters needed to deploy a model) into **out-of-the-box standard products**.
+Based on **vast historical deployment experience**, AGIOne distills each mainstream LLM's deployment knowledge into **reusable model templates**, transforming work that **relies on expert experience** (how many cards, which engine, which parameters needed to deploy a model) into **out-of-the-box standard products**.
 
 ### 2.2 Model Template Contents
 
@@ -100,7 +100,7 @@ The same model can provide **multiple specification variants** within a template
 ### 2.4 Template Version Management
 
 - **Official Templates**: Continuously maintained by the AGIOne team, updated following mainstream model versions;
-- **Enterprise Custom Templates**: Customers can沉淀 proprietary templates based on actual business scenarios (e.g., "Best configuration for fine-tuned Qwen3-VL-7B on 4×L20"), forming internal enterprise best practices library;
+- **Enterprise Custom Templates**: Customers can distill proprietary templates based on actual business scenarios (e.g., "Best configuration for fine-tuned Qwen3-VL-7B on 4×L20"), forming internal enterprise best practices library;
 - **Template Sharing Market**: Share templates across teams within the enterprise to avoid duplicate exploration;
 - **Template Version Tracing**: Each update retains historical versions, supporting rollback.
 
@@ -412,7 +412,7 @@ AGIOne's six core capabilities are not independent existences but an **organic w
 **Typical Business Closed Loop**:
 
 1. ① **Computing Power Governance** provides resource foundation →
-2. ② **Model Templates** 沉淀 deployment experience →
+2. ② **Model Templates** distill deployment experience →
 3. ③ **Rapid Deployment** brings models online →
 4. ④ **Model Publishing** transforms into commercial service →
 5. ⑤ **Model Aggregation** optimizes user experience →

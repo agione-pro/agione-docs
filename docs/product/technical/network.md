@@ -149,7 +149,7 @@ Based on the "AGIOne Managed Chip Compatibility List" and existing practices of 
 |---|---|---|---|
 | **Pool A: NVIDIA Hopper** | H200 / H20 / H100 / H800 | Local LAN + RDMA (RoCE/IB) 100G+ | Flagship large model inference / training; DeepSeek-V3, Qwen2.5-72B, 128K long context |
 | **Pool B: NVIDIA Ada / Ampere** | L20 / L40(S) / L4 / A100 / A800 / A10 / RTX 4090, etc. | Local LAN (RDMA optional) | Medium-scale high-concurrency inference (7B~32B), code assistance, knowledge Q&A |
-| **Pool C: Domestic NPU** | Ascend 910B / 910C, Enflame 106, Biren S60 | Dedicated line / Local LAN + RDMA |信创 compliance scenarios, batch inference; MindIE engine deep optimization |
+| **Pool C: Domestic NPU** | Ascend 910B / 910C, Enflame 106, Biren S60 | Dedicated line / Local LAN + RDMA | China-compliant scenarios, batch inference; MindIE engine deep optimization |
 
 ---
 

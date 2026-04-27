@@ -41,4 +41,4 @@
 | Operations Complexity | Unified control plane governance | Multi-system scattered maintenance |
 | Security and Compliance | Built-in permissions and audit | Requires additional development to supplement |
 | Computing Power Utilization | Heterogeneous computing power unified scheduling | Computing power silos difficult to connect |
-| Model Aggregation | Multi-source model unified access |逐一对接 maintenance cost high |
+| Model Aggregation | Multi-source model unified access | Point-to-point integration, high maintenance cost |
