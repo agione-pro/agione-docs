@@ -2,43 +2,42 @@
 
 ## Core Highlights
 
-### 1) Heterogeneous Platform and Computing Power Unified Governance
+### 1) Unified Management of Heterogeneous Platforms and Compute
 
-- **Multi-platform Computing Power Abstraction**: Unifies management of computing power from mainstream cloud vendors such as Alibaba Cloud, AWS, and Google Cloud, as well as heterogeneous GPU resources from NVIDIA and Huawei Ascend, abstracting them into standardized computing pools to eliminate underlying differences
-- **Flexible Resource Scheduling**: Supports computing power allocation and scheduling by dimensions such as model type, instance specification, and region, improving resource utilization
-- **Unified Operations View**: Provides cross-platform computing resource topology and status monitoring, allowing operations personnel to control the overall computing power distribution from a single control plane
+- **Cross-platform compute abstraction**: Compute resources from mainstream cloud providers (Alibaba Cloud, AWS, Google Cloud) and heterogeneous GPU resources from NVIDIA, Huawei Ascend, and others are onboarded under a single management layer and abstracted into a standardized compute pool, eliminating low-level differences.
+- **Flexible resource scheduling**: Compute is allocated and scheduled across multiple dimensions — model type, instance spec, region, and more — to maximize resource utilization.
+- **Unified operations view**: A cross-platform topology and status dashboard gives operations and SRE teams a single control plane through which the global compute footprint can be managed.
 
-### 2) Heterogeneous Model Unified Governance
+### 2) Unified Management of Heterogeneous Models
 
-- **Multi-source Model Aggregation**: Supports access to model vendor APIs, privately deployed IDC models, platform cloud-side (On-Cloud) deployed models, and private IDC bare metal (On-Prem) deployed models, with unified API interfaces masking underlying differences
-- **Flexible Model Switching**: One-time access configuration enables flexible multi-model routing switching, supporting model effect comparison and canary release, reducing model replacement costs
-- **Full Lifecycle Management**: Covers complete processes including model registration, version management, online/offline, and decommissioning; supports model hot updates and rollback
-- **API-level Model Scheduling**: Provides model-level API calling capabilities, allowing enterprise applications to select models on-demand, achieving loose coupling between business and models
+- **Multi-source model aggregation**: Supports onboarding of vendor-native models, models self-deployed in private IDCs, models deployed cloud-side (On-Cloud) on the platform, and models deployed on bare metal in private IDCs (On-Prem). A unified API masks the underlying differences.
+- **Flexible model switching**: A one-time integration enables flexible routing and switching across models, with support for side-by-side comparison and canary releases — sharply reducing the cost of swapping models.
+- **Full-lifecycle management**: Covers the complete workflow including model publishing, version management, and listing/de-listing, with support for hot updates.
+- **API-level model scheduling**: Model-granular APIs allow enterprise applications to select models on demand, achieving loose coupling between business logic and the underlying models.
 
-### 3) Enterprise-Grade Security and Isolation
+### 3) Enterprise-grade Security and Isolation
 
-- Tenant-level resource and permission isolation, with strict data separation between tenants
-- Request链路 auditable and traceable, meeting high compliance requirements for finance, government, and other industries
-- Adapted for private deployment and internal network environments, with data never leaving the domain
+- Tenant-level isolation of both resources and permissions, with strict separation of multi-tenant data.
+- Fully auditable and traceable request paths, meeting the stringent compliance requirements of industries such as financial services and government.
+- Compatible with on-premises deployment and intranet environments, ensuring that data never leaves the enterprise perimeter.
 
 ### 4) Observability and Operability
 
-- Visualized model service health, real-time grasp of model running status
-- Supports request-level performance diagnosis for quick exception call locating
-- Alert policies configurable by business tier for precise delivery
+- Visualized model service health for real-time insight into runtime status.
+- Per-request performance diagnostics enable rapid root-cause analysis of abnormal invocations.
 
-### 5) Delivery System Oriented to Landing
+### 5) A Delivery System Built for Production Adoption
 
-- Provides standardized survey and deployment templates with predictable delivery cycles
-- Supports scaling from PoC pilots to large-scale replication, with reusable solutions
-- Compatible with existing enterprise infrastructure without requiring large-scale modifications
+- Standardized assessment and deployment templates make delivery timelines predictable.
+- Supports the journey from PoC pilot to large-scale rollout, with reusable solution blueprints.
+- Compatible with existing enterprise infrastructure, with no large-scale retrofit required.
 
 ## Differentiated Value
 
-| Dimension | AGIOne | Common Assembled Solutions |
+| Dimension | AGIOne | Typical DIY Stack |
 |------|--------|-------------|
-| Delivery Efficiency | Out-of-the-box platform capabilities | Requires multi-component self-built integration |
-| Operations Complexity | Unified control plane governance | Multi-system scattered maintenance |
-| Security and Compliance | Built-in permissions and audit | Requires additional development to supplement |
-| Computing Power Utilization | Heterogeneous computing power unified scheduling | Computing power silos difficult to connect |
-| Model Aggregation | Multi-source model unified access | Point-to-point integration, high maintenance cost |
+| Delivery efficiency | Platform capabilities ready out of the box | Multiple components must be assembled and integrated in-house |
+| Operational complexity | Unified governance through a single control plane | Disparate systems maintained separately |
+| Security and compliance | Permissions and audit built in | Requires additional in-house development |
+| Compute utilization | Unified scheduling across heterogeneous compute | Compute silos that are difficult to bridge |
+| Model aggregation | Multi-source models accessed through a unified entry point | Each model integrated individually, with high maintenance overhead |

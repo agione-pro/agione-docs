@@ -2,47 +2,47 @@
 
 ## Product Positioning
 
-AGIOne is an AI intelligent computing platform for enterprise-level scenarios, focusing on three core capabilities: unified computing power governance, multi-source model aggregation, and enterprise-grade governance and control. It helps enterprises quickly build and deploy AI applications in controllable and observable environments.
+AGIOne is an enterprise-grade AI compute platform centered on three core capabilities: **unified compute management, multi-source model aggregation, and enterprise-grade governance and control**. It enables organizations to rapidly build and deploy AI applications within a controllable, observable environment.
 
-The platform supports unified access to third-party models (model original vendors, privately deployed IDC models) and platform-deployed models (cloud-side On-Cloud, private IDC bare metal On-Prem), providing enterprises with flexible on-demand intelligent model services through API-level model scheduling capabilities.
+The platform provides unified onboarding for both third-party models (those from model vendors and self-hosted models in private IDCs) and models deployed on the AGIOne platform itself (cloud-side On-Cloud and bare-metal On-Prem in private IDCs). Through API-level model scheduling, AGIOne delivers flexible, on-demand intelligent model services to the enterprise.
 
 ## Product Value
 
-### 1. Plug-and-Play Computing Power
+### 1. Plug-and-Play Compute
 
-The platform manages computing power from mainstream cloud vendors such as Alibaba Cloud, AWS, and Google Cloud, as well as heterogeneous bare metal resources from NVIDIA, Huawei Ascend, etc., uniformly abstracting them into schedulable GPU resource pools. This eliminates computing power silos and enables enterprises to truly leverage their existing computing power assets.
+The platform onboards compute capacity from major cloud providers — including Alibaba Cloud, AWS, and Google Cloud — alongside heterogeneous bare-metal resources from NVIDIA, Huawei Ascend, and others, abstracting them into a unified, schedulable GPU resource pool. This eliminates compute silos and allows the enterprise to put its existing compute assets to productive use.
 
-### 2. Multi-Source Model Aggregation
+### 2. Multi-source Model Aggregation
 
-Aggregates multi-source model capabilities including model vendor APIs, privately deployed IDC models, platform cloud-side deployed models, and private IDC bare metal deployed models. Provides a unified API interface to support rapid construction of enterprise intelligent applications without needing to concern about underlying model sources and deployment differences.
+AGIOne aggregates capabilities from across the model landscape — vendor-native models, models self-deployed in private IDCs, models deployed cloud-side on the platform, and models deployed on bare metal in private IDCs — and exposes them through a unified API. This accelerates the development of enterprise AI applications by abstracting away differences in model origin and deployment architecture.
 
-### 3. Enterprise-Grade Governance and Control
+### 3. Enterprise-grade Governance and Control
 
-Built-in enterprise-grade governance capabilities such as model call quota control, traffic restrictions, and access permission management. Supports multi-tenant isolation and operation audit, meeting governance requirements for highly regulated industries such as finance and government.
+The platform ships with built-in enterprise governance capabilities, including model invocation quotas, traffic throttling, and access control. Multi-tenant isolation and operational auditing are natively supported, meeting the control requirements of highly regulated industries.
 
-### 4. Full-Chain Observability
+### 4. End-to-End Observability
 
-Provides core metric monitoring dashboards for model call volume, deployed instance resource consumption, and response latency. Offers data basis for operations teams to support business scaling decisions and cost optimization.
+AGIOne provides monitoring dashboards covering core metrics such as model invocation volume, resource consumption per deployment instance, and response latency — equipping operations and SRE teams with the data they need to make scaling decisions and optimize costs.
 
-## Target Customers and Typical Scenarios
+## Target Customers and Representative Scenarios
 
-| Customer Type | Core Requirements | Typical Scenarios |
+| Customer Type | Core Requirements | Representative Scenarios |
 |---------|---------|---------|
-| Government and Enterprise Customers | Data localization, private deployment, compliance audit | Government knowledge base intelligent Q&A, automatic document processing |
-| Financial Customers | High availability, quota control, traceable operations | Intelligent customer service, risk assessment assistance, contract review |
-| Manufacturing Customers | Production line integration, heterogeneous computing power scheduling, knowledge precipitation | Industrial quality inspection, predictive equipment maintenance, process knowledge base |
-| Internet Enterprises | Elastic scaling, multi-model routing, cost control | Rapid AI application construction, model A/B testing |
+| Government and SOE customers | Data localization, on-premises deployment, compliance auditing | Intelligent Q&A over government knowledge bases, automated document processing |
+| Financial services customers | High availability, quota control, full operational traceability | Intelligent customer service, risk-assessment assistance, contract review |
+| Manufacturing customers | Production-line integration, heterogeneous compute scheduling, knowledge accumulation | Industrial quality inspection, predictive equipment maintenance, process knowledge bases |
+| Internet enterprises | Elastic scaling, multi-model routing, cost control | Rapid AI application development, model A/B testing |
 
-**Typical Scenario Examples:**
+**Representative scenario examples:**
 
-- **Enterprise Knowledge Base Q&A**: Based on RAG architecture, aggregates internal documents to build an enterprise knowledge hub, supporting unified multi-model calling
-- **Multi-Model Unified Access and Routing**: One-time access configuration enables flexible multi-model routing switching, supporting model effect comparison and routing policy configuration
-- **AI Application Monitoring and Operations Governance**: Full-chain tracking of model calls, supporting quota allocation and traffic control
-- **Rapid Model Construction and Publishing**: From model selection to API delivery, full-process automation, shortening time-to-market
+- **Enterprise knowledge-base Q&A**: Built on a RAG architecture, internal documents are consolidated into an enterprise knowledge hub with unified multi-model invocation.
+- **Unified multi-model access and routing**: Integrate once, switch models flexibly — with support for side-by-side model comparison and configurable routing strategies.
+- **AI application monitoring and operational governance**: End-to-end tracing of model invocations, with support for quota allocation and traffic control.
+- **Rapid model development and release**: Fully automated workflow from model selection to API delivery, shortening time to launch.
 
 ## Delivery Value
 
-- **Reduces AI Platform Construction Complexity**: One-stop computing power and model management, no need to rebuild underlying infrastructure
-- **Shortens PoC to Production Launch Cycle**: Standardized deployment templates and API interfaces for rapid verification and iteration
-- **Unified Model Management and Operations Standards**: Centralized control of model versions, traffic allocation, and access rights; improved operations efficiency
-- **Improves Resource Utilization Under Compliance and Security**: Multi-tenant isolation, audit tracking, and quota control enable more refined resource allocation
+- **Reduces the complexity of building an AI platform**: One-stop onboarding of compute and models eliminates the need to reinvent the underlying infrastructure.
+- **Shortens the cycle from PoC to production**: Standardized deployment templates and APIs accelerate validation and iteration.
+- **Unifies model management and operational standards**: Centralized control of model versions, traffic allocation, and access permissions improves operational efficiency.
+- **Improves resource utilization without compromising compliance and security**: Multi-tenant isolation, audit trails, and quota controls enable more granular resource allocation.
