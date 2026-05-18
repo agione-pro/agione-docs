@@ -83,7 +83,7 @@ This document describes the limitations, risk items, and pending confirmation it
 | OCR | OCR quality and throughput depend on image quality, model version, and inference resources |
 | Embedding | RAG scenarios require integration with vector database, chunking, permission filtering, and recall strategy |
 | Reranker | Improves recall quality but increases request chain latency |
-| RAG | Requires governance of knowledge permissions, data chunking, vectorization, recall, and auditing |
+| RAG（Planning） | Requires governance of knowledge permissions, data chunking, vectorization, recall, and auditing |
 | Function Calling / Tool Use | Model protocol, tool schema, permissions, and execution auditing must be confirmed |
 | Agent / Workflow | Depends on Agent Builder, tool integration, and enterprise permission system |
 | OpenAI-compatible API | Specific interface scope must be confirmed by product version |

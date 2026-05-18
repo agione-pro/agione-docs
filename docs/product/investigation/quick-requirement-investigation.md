@@ -11,6 +11,8 @@ The survey focuses on two dimensions:
 | Model Requirements | What model, what capabilities, how many users, expected call volume | Determines whether AGIOne already supports the model, or if listing, resource testing, protocol adaptation, or metering method development is needed |
 | Compute Resources | Whether the customer already has compute resources or plans to procure them, specific CPU, memory, storage, GPU/NPU models, etc. | Determines whether customer-side compute resources are already adapted by AGIOne; if not, whether driver, image, scheduling, or management development is needed |
 
+> 📥 **Download fillable template:** <a href="/downloads/AGIOne_Requirements_Quick_Survey.xlsx" download>Requirements Quick Survey (.xlsx)</a>
+
 ## 2. Quick Conclusion Section
 
 | Survey Item | Conclusion | Notes |

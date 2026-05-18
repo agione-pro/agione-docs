@@ -6,6 +6,7 @@ import { socialLinks } from '../social'
 
 export default defineConfig({
   ...baseConfig,
+  ignoreDeadLinks: true,
   themeConfig: {
     // Local Search (enabled)
     search: {

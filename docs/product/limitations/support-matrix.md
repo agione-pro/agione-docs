@@ -13,7 +13,7 @@ This document constitutes a draft support matrix, applicable to product introduc
 | Management Node Deployment | Supports All-in-One, local multi-node, Kubernetes/cloud-native, private deployment, and offline or low-connectivity delivery | Specific specifications must be confirmed based on deployment form, managed scale, and delivery package version |
 | Compute Node Management | Supports NVIDIA Hopper / Ampere / Ada, Ascend 910B/910C, Enflame 106, Biren S60 | Chip manageability does not imply that all model, driver, CUDA, and inference engine combinations have been validated |
 | Compute Platform Management | Supports Alibaba Cloud, AWS, Google Cloud, AGIOne heterogeneous card management (PowerOne), and other cloud platforms; Huawei Cloud not currently supported | Account permissions, network connectivity, API credentials, and security policies for different cloud platforms require separate evaluation |
-| Model Service Capabilities | Supports text generation, reasoning, multimodal, OCR, embedding, reranking, RAG, function calling, aggregate models, streaming output, and usage metering | Specific capabilities depend on the model itself, inference engine, protocol adaptation, and product version |
+| Model Service Capabilities | Supports text generation, reasoning, multimodal, OCR, embedding, reranking, RAG（Planning）, function calling（Planning）, aggregate models, streaming output, and usage metering | Specific capabilities depend on the model itself, inference engine, protocol adaptation, and product version |
 |Rapid-Deployment Models | Supports DeepSeek, Qwen, Kimi, MiniMax, GLM, Llama, and other model series | Ultra-large models require evaluation of VRAM, parallelism strategy, quantization method, storage, and network conditions |
 
 ## 3. AGIOne Management Node Deployment Support Matrix
@@ -85,8 +85,8 @@ This document constitutes a draft support matrix, applicable to product introduc
 | OCR | Supported | Supports OCR models such as DeepSeek-OCR, DeepSeek-OCR-2 | OCR quality and throughput depend on image quality, model version, and inference resources |
 | Embedding | Supported | Supports vector models such as qwen3-embedding-8b | RAG scenarios require combining vector database, chunking, permission filtering, and recall strategies |
 | Reranker | Supported | Supports reranking models such as qwen3-reranker-8b | Improves recall quality at the cost of increased request chain latency |
-| RAG | Supported | Supports knowledge base-augmented Q&A, document retrieval, and context injection | Requires governance of knowledge permissions, data chunking, vectorization, recall, and auditing |
-| Function Calling / Tool Use | Supported | Supports tool calling and agent orchestration scenarios | Requires confirmation of model protocol, tool schema, permissions, and execution auditing |
+| RAG（Planning） | Supported | Supports knowledge base-augmented Q&A, document retrieval, and context injection | Requires governance of knowledge permissions, data chunking, vectorization, recall, and auditing |
+| Function Calling / Tool Use（Planning） | Supported | Supports tool calling and agent orchestration scenarios | Requires confirmation of model protocol, tool schema, permissions, and execution auditing |
 | Agent / Workflow | Supported | Supports composing models, knowledge, tools, and human nodes into intelligent workflows | Depends on Agent Builder, tool integrations, and enterprise permission systems |
 | OpenAI-Compatible API | Supported | Supports OpenAI-style Chat Completions, Responses, Embeddings, and other interface forms | Specific interface scope must be confirmed by product version |
 | Anthropic-Compatible API | Conditionally Supported | Can be used for Anthropic Messages and other protocol adaptation scenarios | Must be confirmed by product version, upstream model, and protocol strategy |

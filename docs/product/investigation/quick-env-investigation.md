@@ -2,6 +2,8 @@
 
 This document is used before AGIOne local deployment or cloud-native deployment to determine whether the environment meets installation prerequisites, identify delivery risks, and produce a remediation and go-live checklist.
 
+> 📥 **Download fillable template:** <a href="/downloads/AGIOne_Environment_Quick_Assessment.xlsx" download>Environment Quick Assessment (.xlsx)</a>
+
 ## 1. Document Information
 
 | Field | Value |

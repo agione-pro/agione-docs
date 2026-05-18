@@ -83,7 +83,7 @@
 | OCR | OCR 效果和吞吐依赖图片质量、模型版本和推理资源 |
 | Embedding | RAG 场景需结合向量库、chunking、权限过滤和召回策略 |
 | Reranker | 增加召回质量的同时会增加请求链路时延 |
-| RAG |需治理知识权限、数据切分、向量化、召回和审计 |
+| RAG（规划中） |需治理知识权限、数据切分、向量化、召回和审计 |
 | Function Calling / Tool Use |需确认模型协议、工具 schema、权限和执行审计 |
 | Agent / Workflow |依赖 Agent Builder、工具集成和企业权限体系 |
 | OpenAI-compatible API |具体接口范围需按产品版本确认 |

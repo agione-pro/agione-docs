@@ -1,27 +1,17 @@
----
-prev: false
-next: true
----
-
 # Best Practices
 
 This section provides technical and project best practices for AGIOne delivery and ecosystem integration.
 
-## Documentation Structure
+## Technical Practices
 
-### `technical/ai-coding-client/`
+### `technical/`
 
-AI coding client integration practices and implementation guidance.
+AI coding platform integration practices and implementation guidance. See [Technical Practices - AI Coding Integration](./technical/).
 
-| Document | Purpose |
-|------|------|
-| [OpenClaw](./technical/ai-coding-client/openclaw) | Integration approach and configuration example for OpenClaw |
-| [Claude Code](./technical/ai-coding-client/claude-code) | Integration approach and operation checklist for Claude Code |
+## Project Practices
 
-### `project/`
-
-Project-level implementation cases and reusable delivery experience.
+Project-level implementation cases and reusable delivery experience. See [Project Practices](./project/).
 
 | Document | Purpose |
 |------|------|
-| [Bare Metal Compute Resource Management and Services for Thailand CP](./project/thailand-cp) | Real-world project case and delivery lessons learned |
+| [Multi-Compute Pool Heterogeneous Inference Scheduling Best Practice](./project/multi-compute-pool-heterogeneous-inference-scheduling) | Best practice for heterogeneous inference scheduling across multiple compute pools |

@@ -5,12 +5,17 @@ next: true
 
 # 用户手册
 
-本章节用于说明账号注册、登录与仪表盘使用的基础流程。
-
 ## 文档清单
 
-| 文档 | 用途 |
+| 文档 | 说明 |
 |------|------|
-| [注册](./register) | 创建用户账号并完成初始化信息设置 |
-| [登录](./login) | 完成登录与常见登录问题处理 |
-| [仪表盘](./dashboard) | 了解核心看板模块与日常操作入口 |
+| [用户快速指引](./user-quick-guide) | 面向最终用户的快速指引 |
+| [供应商快速指引](./vendor-quick-guide) | 面向模型发布商的快速指引 |
+
+## 项目
+
+| 项目 | 说明 |
+|------|------|
+| [Model Services](./model-services) | 待更新 |
+| [AI Infra on Cloud](./ai-infra-on-cloud) | 待更新 |
+| [AI Infra on Prem](./ai-infra-on-prem) | 待更新 |

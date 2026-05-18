@@ -13,6 +13,5 @@ next: true
 |------------------------------------------------------------------------|-----------------------|
 | [(AGIOne) 部署与配置要求](./agione-deployment-requirements)                   | AGIOne 的最低和推荐部署要求     |
 | [(AGIOne) 环境安装部署指南](./agione-environment-installation-deployment)       | AGIOne 离线或弱网环境安装流程与交付交接 |
-| [(AGIOne) 快速安装指南](./agione-quick-install)                              | AGIOne 的快速安装与基线校验     |
 | [(节点纳管) 部署与配置要求](./deployment-requirements-for-managing-compute-nodes) | 纳管算力节点的环境及资源需求        |
 | [(节点纳管) 快速安装指南](./quick-install-for-managing-compute-nodes)      | 纳管算力节点的快速安装与基线校验 |

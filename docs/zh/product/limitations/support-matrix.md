@@ -13,7 +13,7 @@
 | 管理节点部署         | 支持 All-in-One、本地多节点、Kubernetes / 云原生、私有化、离线或弱网交付                     | 具体规格需按部署形态、纳管规模和交付包版本确认         |
 | 算力节点纳管         | 支持 NVIDIA Hopper / Ampere / Ada，Ascend910B/910C，Enflame106，Biren S60 | 芯片可纳管不等于所有模型、驱动、CUDA、推理引擎组合均已验证 |
 | 算力平台纳管         | 支持阿里云、AWS、Google Cloud、AGIOne 异构卡纳管（算模方）等云平台，暂不支持华为云             | 不同云平台的账号权限、网络互通、API 密钥和安全策略需单独评估    |
-| 模型服务能力         | 支持文本生成、推理、多模态、OCR、Embedding、Reranker、RAG、工具调用、聚合模型、流式输出和 usage计量等    | 具体能力依赖模型本身、推理引擎、协议适配和产品版本       |
+| 模型服务能力         | 支持文本生成、推理、多模态、OCR、Embedding、Reranker、RAG（规划中）、工具调用（规划中）、聚合模型、流式输出和 usage计量等    | 具体能力依赖模型本身、推理引擎、协议适配和产品版本       |
 | 快速部署模型         | 支持 DeepSeek、Qwen、Kimi、MiniMax、GLM、Llama 等系列                          | 超大模型需评估显存、并行策略、量化方式、存储和网络条件     |
 
 ## 3. AGIOne 管理节点部署支持矩阵
@@ -85,8 +85,8 @@
 | OCR | 支持 | 支持 DeepSeek-OCR、DeepSeek-OCR-2 等 OCR 模型 | OCR 效果和吞吐依赖图片质量、模型版本和推理资源 |
 | Embedding | 支持 | 支持 qwen3-embedding-8b 等向量模型 | RAG 场景需结合向量库、chunking、权限过滤和召回策略 |
 | Reranker | 支持 | 支持 qwen3-reranker-8b 等重排序模型 | 增加召回质量的同时会增加请求链路时延 |
-| RAG | 支持 | 支持知识库增强问答、文档检索、上下文注入 |需治理知识权限、数据切分、向量化、召回和审计 |
-| Function Calling / Tool Use | 支持 | 支持工具调用和智能体编排场景 |需确认模型协议、工具 schema、权限和执行审计 |
+| RAG（规划中） | 支持 | 支持知识库增强问答、文档检索、上下文注入 |需治理知识权限、数据切分、向量化、召回和审计 |
+| Function Calling / Tool Use（规划中） | 支持 | 支持工具调用和智能体编排场景 |需确认模型协议、工具 schema、权限和执行审计 |
 | Agent / Workflow | 支持 | 支持将模型、知识、工具和人工节点组合为智能工作流 |依赖 Agent Builder、工具集成和企业权限体系 |
 | OpenAI-compatible API | 支持 | 支持 OpenAI 风格 Chat Completions、Responses、Embeddings 等接口形态 |具体接口范围需按产品版本确认 |
 | Anthropic-compatible API | 条件支持 | 可用于 Anthropic Messages 等协议适配场景 |需按产品版本、上游模型和协议策略确认 |
