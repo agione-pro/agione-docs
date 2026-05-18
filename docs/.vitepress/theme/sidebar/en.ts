@@ -67,6 +67,10 @@ export const enSidebar: DefaultTheme.Sidebar = {
           link: "/installation/agione-deployment-requirements"
         },
         {
+          text: "Pre-install Environment Check",
+          link: "/installation/agione-precheck-environment-check"
+        },
+        {
           text: "Installation & Deployment",
           link: "/installation/agione-quick-install"
         },

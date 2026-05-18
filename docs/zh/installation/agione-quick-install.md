@@ -123,16 +123,6 @@ AGIOne 安装器负责完成以下工作：
 
 ## Getting Started
 
-### 安装前检查
-
-首次交付前建议先执行：
-
-```bash
-./agione doctor
-```
-
-`doctor` 会生成诊断报告和支持包，适合在安装前或失败后快速定位问题。首次安装场景会使用 `/tmp` 临时检查工作区，不创建 `/opt/agione-installer-bundle`。
-
 ### bundle 校验
 
 如果需要确认交付物完整性：

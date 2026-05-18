@@ -123,16 +123,6 @@ The AGIOne installer is responsible for:
 
 ## Getting Started
 
-### Pre-install checks
-
-Before the first delivery, run:
-
-```bash
-./agione doctor
-```
-
-`doctor` generates diagnostic reports and support bundles, suitable for quick issue localization before installation or after failures. In first-installation scenarios, it uses a temporary `/tmp` check workspace and does not create `/opt/agione-installer-bundle`.
-
 ### Bundle verification
 
 To confirm delivery artifact integrity:
