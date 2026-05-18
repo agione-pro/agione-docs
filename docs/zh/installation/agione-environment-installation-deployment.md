@@ -1,14 +1,11 @@
 # AGIOne 环境安装部署指南
 
-> English version: [AGIOne Environment Installation and Deployment Guide](/installation/agione-environment-installation-deployment)
-
 AGIOne 安装器用于在离线或弱网环境中完成 AGIOne 单机交付安装。本文档按“先快速安装，再深入配置，最后运维排障”的方式组织，安装人员优先阅读 **Quick Install** 即可开始。
 
 安装前建议先完成环境快速调研，判断是否满足安装部署前置条件，并识别整改与上线风险：
 
 - [环境快速调研](/zh/product/investigation/quick-env-investigation)
-- [Quick Environmental Investigation](/product/investigation/quick-env-investigation)
-
+- 
 ---
 
 ## 主机规格
