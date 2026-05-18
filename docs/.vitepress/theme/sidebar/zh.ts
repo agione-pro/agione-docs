@@ -35,9 +35,8 @@ export const zhSidebar: DefaultTheme.Sidebar = {
       text: '安装部署',
       collapsed: false,
       items: [
-        { text: 'AGIOne-部署配置要求', link: '/zh/installation/agione-deployment-requirements' },
-        { text: 'AGIOne-环境安装部署指南', link: '/zh/installation/agione-environment-installation-deployment' },
-        { text: 'AGIOne-快速安装指南', link: '/zh/installation/agione-quick-install' },
+        { text: '部署配置要求', link: '/zh/installation/agione-deployment-requirements' },
+        { text: '环境安装部署指南', link: '/zh/installation/agione-environment-installation-deployment' },
         { text: '节点纳管-部署配置要求', link: '/zh/installation/deployment-requirements-for-managing-compute-nodes' },
         { text: '节点纳管-快速安装指南', link: '/zh/installation/quick-install-for-managing-compute-nodes' },
       ],
@@ -90,9 +89,61 @@ export const zhSidebar: DefaultTheme.Sidebar = {
       text: '用户手册',
       collapsed: false,
       items: [
-        { text: '注册', link: '/zh/usermanual/register' },
-        { text: '登录', link: '/zh/usermanual/login' },
-        { text: '仪表盘', link: '/zh/usermanual/dashboard' },
+        { text: '用户快速指引', link: '/zh/usermanual/user-quick-guide' },
+        { text: '供应商快速指引', link: '/zh/usermanual/provider-quick-guide' },
+        {
+          text: '模型及AI服务',
+          collapsed: false,
+          items: [
+            {
+              text: '概览',
+              link: '/zh/usermanual/model-services/'
+            },
+            {
+              text: '客户调用',
+              collapsed: false,
+              items: [
+                { text: '概览', link: '/zh/usermanual/model-services/customer-calls/overview/' },
+                { text: '调用分析', link: '/zh/usermanual/model-services/customer-calls/call-analytics/' },
+                { text: '调用日志', link: '/zh/usermanual/model-services/customer-calls/call-logs/' },
+              ]
+            },
+            {
+              text: '发现',
+              collapsed: false,
+              items: [
+                { text: '模型', link: '/zh/usermanual/model-services/discover/models/' },
+              ]
+            },
+            {
+              text: '体验中心',
+              collapsed: false,
+              items: [
+                { text: '文本对话', link: '/zh/usermanual/model-services/playground/text/' },
+                { text: '语音', link: '/zh/usermanual/model-services/playground/audio/' },
+                { text: '图片', link: '/zh/usermanual/model-services/playground/images/' },
+                { text: '视频', link: '/zh/usermanual/model-services/playground/video/' },
+              ]
+            },
+            {
+              text: '创作空间',
+              collapsed: false,
+              items: [
+                { text: '我的模型', link: '/zh/usermanual/model-services/studio/my-models/' },
+              ]
+            },
+            {
+              text: '用量与收益',
+              collapsed: false,
+              items: [
+                { text: '用量', link: '/zh/usermanual/model-services/usage-revenue/usage/' },
+                { text: '收益', link: '/zh/usermanual/model-services/usage-revenue/revenue/' },
+              ]
+            },
+          ]
+        },
+        { text: '多云平台调度', link: '/zh/usermanual/ai-infra-on-cloud/' },
+        { text: '异构卡纳管', link: '/zh/usermanual/ai-infra-on-prem/' },
       ],
     },
   ],
@@ -109,14 +160,20 @@ export const zhSidebar: DefaultTheme.Sidebar = {
               text: 'AI 编码集成',
               collapsed: false,
               items: [
-                {
-                  text: 'OpenClaw',
-                  link: '/zh/practices/technical/ai-coding-client/openclaw',
-                },
-                {
-                  text: 'Claude Code',
-                  link: '/zh/practices/technical/ai-coding-client/claude-code',
-                },
+                { text: 'CherryStudio', link: '/zh/practices/technical/cherry-studio/' },
+                { text: 'claudeCode', link: '/zh/practices/technical/claude-code/' },
+                { text: 'ClaudeCode-plugin', link: '/zh/practices/technical/claude-code-plugin/' },
+                { text: 'Cline', link: '/zh/practices/technical/cline/' },
+                { text: 'Codex', link: '/zh/practices/technical/codex/' },
+                { text: 'Crush', link: '/zh/practices/technical/crush/' },
+                { text: 'Cursor', link: '/zh/practices/technical/cursor/' },
+                { text: 'dify', link: '/zh/practices/technical/dify/' },
+                { text: 'KiloCode', link: '/zh/practices/technical/kilo-code/' },
+                { text: 'n8n', link: '/zh/practices/technical/n8n/' },
+                { text: 'open-webui', link: '/zh/practices/technical/open-webui/' },
+                { text: 'openclaw', link: '/zh/practices/technical/openclaw/' },
+                { text: 'OpenCode', link: '/zh/practices/technical/open-code/' },
+                { text: 'RooCode', link: '/zh/practices/technical/roo-code/' },
               ],
             },
           ],
@@ -126,8 +183,8 @@ export const zhSidebar: DefaultTheme.Sidebar = {
           collapsed: false,
           items: [
             {
-              text: '泰国 CP 裸金属算力管理与服务案例',
-              link: '/zh/practices/project/thailand-cp',
+              text: '多算力池异构推理调度最佳实践',
+              link: '/zh/practices/project/multi-compute-pool-heterogeneous-inference-scheduling',
             },
           ],
         },
