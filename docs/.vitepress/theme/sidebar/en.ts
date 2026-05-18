@@ -63,16 +63,12 @@ export const enSidebar: DefaultTheme.Sidebar = {
       collapsed: false,
       items: [
         {
-          text: "AGIOne - Requirements",
+          text: "Requirements",
           link: "/installation/agione-deployment-requirements"
         },
         {
-          text: "AGIOne-Installation & Deployment",
+          text: "Installation & Deployment",
           link: "/installation/agione-environment-installation-deployment"
-        },
-        {
-          text: "AGIOne-Installation",
-          link: "/installation/agione-quick-install"
         },
         {
           text: "Compute Nodes-Requirements",
@@ -136,16 +132,71 @@ export const enSidebar: DefaultTheme.Sidebar = {
       collapsed: false,
       items: [
         {
-          text: "Register",
-          link: "/usermanual/register"
+          text: "User Quick Guide",
+          link: "/usermanual/user-quick-guide"
         },
         {
-          text: "Login",
-          link: "/usermanual/login"
+          text: "Provider Quick Guide",
+          link: "/usermanual/provider-quick-guide"
         },
         {
-          text: "Dashboard",
-          link: "/usermanual/dashboard"
+          text: "Model Services",
+          collapsed: false,
+          items: [
+            {
+              text: "Overview",
+              link: "/usermanual/model-services/"
+            },
+            {
+              text: "Customer Calls",
+              collapsed: false,
+              items: [
+                { text: "Overview", link: "/usermanual/model-services/customer-calls/overview/" },
+                { text: "Call Analytics", link: "/usermanual/model-services/customer-calls/call-analytics/" },
+                { text: "Call Logs", link: "/usermanual/model-services/customer-calls/call-logs/" },
+              ]
+            },
+            {
+              text: "Discover",
+              collapsed: false,
+              items: [
+                { text: "Models", link: "/usermanual/model-services/discover/models/" },
+              ]
+            },
+            {
+              text: "Playground",
+              collapsed: false,
+              items: [
+                { text: "Text", link: "/usermanual/model-services/playground/text/" },
+                { text: "Audio", link: "/usermanual/model-services/playground/audio/" },
+                { text: "Images", link: "/usermanual/model-services/playground/images/" },
+                { text: "Video", link: "/usermanual/model-services/playground/video/" },
+              ]
+            },
+            {
+              text: "Studio",
+              collapsed: false,
+              items: [
+                { text: "My Models", link: "/usermanual/model-services/studio/my-models/" },
+              ]
+            },
+            {
+              text: "Usage & Revenue",
+              collapsed: false,
+              items: [
+                { text: "Usage", link: "/usermanual/model-services/usage-revenue/usage/" },
+                { text: "Revenue", link: "/usermanual/model-services/usage-revenue/revenue/" },
+              ]
+            },
+          ]
+        },
+        {
+          text: "AI Infra on Cloud",
+          link: "/usermanual/ai-infra-on-cloud/"
+        },
+        {
+          text: "AI Infra on Prem",
+          link: "/usermanual/ai-infra-on-prem/"
         }
       ]
     }
@@ -159,14 +210,20 @@ export const enSidebar: DefaultTheme.Sidebar = {
           text: "AI Coding Integration",
           collapsed: false,
           items: [
-            {
-              text: "OpenClaw",
-              link: "/practices/technical/ai-coding-client/openclaw",
-            },
-            {
-              text: "Claude Code",
-              link: "/practices/technical/ai-coding-client/claude-code",
-            }
+            { text: "CherryStudio", link: "/practices/technical/CherryStudio/" },
+            { text: "claudeCode", link: "/practices/technical/claudeCode/" },
+            { text: "ClaudeCode-plugin", link: "/practices/technical/ClaudeCode-plugin/" },
+            { text: "Cline", link: "/practices/technical/Cline/" },
+            { text: "Codex", link: "/practices/technical/Codex/" },
+            { text: "Crush", link: "/practices/technical/Crush/" },
+            { text: "Cursor", link: "/practices/technical/Cursor/" },
+            { text: "dify", link: "/practices/technical/dify/" },
+            { text: "KiloCode", link: "/practices/technical/KiloCode/" },
+            { text: "n8n", link: "/practices/technical/n8n/" },
+            { text: "open-webui", link: "/practices/technical/open-webui/" },
+            { text: "openclaw", link: "/practices/technical/openclaw/" },
+            { text: "OpenCode", link: "/practices/technical/OpenCode/" },
+            { text: "RooCode", link: "/practices/technical/RooCode/" },
           ]
         },
       ]
@@ -177,7 +234,7 @@ export const enSidebar: DefaultTheme.Sidebar = {
       text: "Project Practices",
       collapsed: false,
       items: [
-        { text: "Bare Metal Compute Resource Management and Services for Thailand CP", link: "/practices/project/thailand-cp" }
+        { text: "Multi-Compute Pool Heterogeneous Inference Scheduling Best Practice", link: "/practices/project/multi-compute-pool-heterogeneous-inference-scheduling" }
       ]
     }
   ],
